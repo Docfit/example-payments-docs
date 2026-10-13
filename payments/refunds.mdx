@@ -39,6 +39,8 @@ Returns the refund with `status` set to `pending` and `created_at` set to when t
 
 | Parameter | Type | Required | Description |
 |---|---|---|---|
+| `reason` | string | no | Only refunds issued for this reason. One of `duplicate`, `fraudulent`, or `requested_by_customer`. |
+| `limit` | integer | no | Page size, 1–50. Defaults to 20. Larger pages are capped at 50. |
 | `starting_after` | string | no | Cursor: the id of the last refund on the previous page. Cannot be combined with `ending_before`. |
 | `ending_before` | string | no | Cursor for paging backwards: the id of the first refund on the current page. Cannot be combined with `starting_after`. |
 
