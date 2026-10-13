@@ -1,0 +1,16 @@
+---
+title: "Events"
+description: "Webhook payloads."
+---
+
+## refund.created
+
+Sent when a refund is created.
+
+| Field | Type | Description |
+|---|---|---|
+| `id` | string | Refund id. |
+| `payment_id` | string | The refunded payment. |
+| `amount` | integer | Amount in minor units. |
+| `reason` | string | Why the refund is issued. One of `duplicate`, `fraudulent`, or `requested_by_customer`. |
+| `created_at` | string | When the refund was created. RFC 3339 in UTC with millisecond precision. |

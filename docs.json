@@ -1,0 +1,21 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Example Payments API",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Payments",
+        "pages": [
+          "payments/overview",
+          "payments/refunds"
+        ]
+      },
+      {
+        "group": "Webhooks",
+        "pages": [
+          "webhooks/events"
+        ]
+      }
+    ]
+  }
+}
